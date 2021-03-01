@@ -1,0 +1,26 @@
+[
+  {
+    "callsign": "N4XAE",
+    "frequency": 14.252,
+    "mode": "SSB",
+    "timestamp": "2021-04-23T18:25:43.511Z"
+  },
+  {
+    "callsign": "KN4QNT",
+    "frequency": 14.100,
+    "mode": "SSB",
+    "timestamp": "2021-04-23T18:37:11.211Z"
+  },
+  {
+    "callsign": "K1JT",
+    "frequency": 14.078,
+    "mode": "FT8",
+    "timestamp": "2021-04-24T09:08:19.154Z"
+  },
+  {
+    "callsign": "N4XAE",
+    "frequency": 14.078,
+    "mode": "FT8",
+    "timestamp": "2021-04-24T09:11:42.123Z"
+  }
+]

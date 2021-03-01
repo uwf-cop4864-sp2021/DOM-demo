@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+  <!-- App Specific CSS -->
+  <link rel="stylesheet" href="css/app.css">
+
+  <title>Simple Logger</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Simple Logger</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+      </ul>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item disabled mr-2 d-none d-lg-block">
+          <a class="nav-link" href="" data-target="#myModal" data-toggle="modal">Hi, E.L.</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-light" href="" data-target="#myModal" data-toggle="modal">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 col-lg-8">
+        <div class="card mt-4">
+          <div class="card-header">Add Contact</div>
+          <div class="card-body">
+            <form id="new-contact" class="mb-2">
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+
+                      <div class="form-group">
+                        <label for="callsign">Callsign</label>
+                        <input type="text" class="form-control" id="callsign" aria-describedby="callsign-help">
+                        <small id="callsign-help" class="form-text text-muted">The callsign of the person you've
+                          contacted.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="frequency">Frequency</label>
+                        <input type="text" class="form-control" id="frequency">
+                      </div>
+
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="mode">Mode</label>
+                      <input type="text" class="form-control" id="mode">
+                    </div>
+                      <div class="form-group">
+                        <label for="notes">Notes</label>
+                        <textarea class="form-control" id="notes" rows="3"></textarea>
+                      </div>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Log</button>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-lg-4 d-none d-lg-block">
+        <div class="card mt-4">
+          <div class="card-header">Info</div>
+          <div class="card-body">
+            <dl>
+              <dt>Country</dt>
+              <dd>United States</dd>
+
+              <dt>Location</dt>
+              <dd>Florida</dd>
+
+            </dl>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+
+      <div class="col-12">
+
+        <div class="card">
+          <div class="card-header">Contacts</div>
+          <div class="card-body">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">Date</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Callsign</th>
+                  <th scope="col" class="d-none d-md-table-cell">Frequency</th>
+                  <th scope="col" class="d-none d-md-table-cell">Mode</th>
+                  <th scope="col">Edit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2021-02-22</td>
+                  <td>13:54</td>
+                  <td>N4XAE</td>
+                  <td class="d-none d-md-table-cell">14,252.0</td>
+                  <td class="d-none d-md-table-cell">SSB</td>
+                  <td><button type="button" class="btn btn-outline-dark btn-sm">Edit</button></td>
+                </tr>
+                <tr>
+                  <td>2021-02-22</td>
+                  <td>13:57</td>
+                  <td>KN4QNT</td>
+                  <td class="d-none d-md-table-cell">14,252.0</td>
+                  <td class="d-none d-md-table-cell">SSB</td>
+                  <td><button type="button" class="btn btn-outline-dark btn-sm">Edit</button></td>
+                </tr>
+                <tr>
+                  <td>2021-02-22</td>
+                  <td>13:58</td>
+                  <td>KB5VLU</td>
+                  <td class="d-none d-md-table-cell">14,252.0</td>
+                  <td class="d-none d-md-table-cell">SSB</td>
+                  <td><button type="button" class="btn btn-outline-dark btn-sm">Edit</button></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
